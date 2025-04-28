@@ -1,0 +1,58 @@
+.home-slider {
+    margin: 2rem 0;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #007BFF;
+  }
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+    padding: 0 2rem;
+  }
+  
+  .info-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .info-text {
+    max-width: 600px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .blog-section {
+    padding: 2rem;
+  }
+  
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .blog-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  

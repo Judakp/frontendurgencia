@@ -1,0 +1,11 @@
+.footer {
+    position: fixed; /* Fixe le footer en bas */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Occupe toute la largeur */
+    padding: 15px 0;
+    background-color: #4c0203; /* Modifie la couleur */
+    color: #fff; /* Texte en blanc */
+    text-align: center; /* Centrer le texte */
+  }
+  

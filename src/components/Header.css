@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #4c0203; /* Modifie la couleur */
+  }
+  
+  .logo img {
+    width: 100px;  
+     height: 100px;
+  } 
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
