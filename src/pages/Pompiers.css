@@ -1,0 +1,283 @@
+.home-slider-container {
+    padding: 2rem;
+  }
+  
+  .home-container {
+    background-color: #2596be;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .home-slider-box {
+    border: 4px solid #1976d2;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f16b12;
+    padding: 1rem;
+  }
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .info-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .info-text {
+    max-width: 600px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .blog-section {
+    padding: 2rem;
+  }
+  
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .blog-item {
+    background: #f16b12;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .services-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .service-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* -------- CONTACT SECTION -------- */
+  .contact-section {
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    align-items: stretch;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    background-color: #f16b12;
+    color: #000000;
+  }
+  
+  .contact-form {
+    background-color: #e3f2fd;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  
+  .btn {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .thank-you-message {
+    color: #000000;
+  }
+  
+  /* -------- FIRESTATION SECTION -------- */
+  .firestation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .firestation-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .firestation-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .firestation-info button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* ----------------- RESPONSIVE ------------------ */
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-image {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .services-horizontal {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      flex: none;
+      height: auto;
+    }
+  
+    .firestation-card {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-slider-container,
+    .home-container,
+    .blog-section,
+    .services-horizontal,
+    .contact-section {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #1976d2;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .info-text {
+      padding: 0 1rem;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      flex: none;
+      height: auto;
+    }
+  
+    .firestation-card {
+      padding: 1rem;
+    }
+  }
+  

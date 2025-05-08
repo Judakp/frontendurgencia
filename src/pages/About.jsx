@@ -1,38 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import GoogleMap from "../components/GoogleMap"; // Composant pour afficher la carte
+import "./About.css";
 
-const About = () => {
+export default function About() {
   return (
-    <div className="home-container">
-      {/* En-tête de la page */}
-      <header className="home-header">
-        <h1>Bienvenue à Ouidah - Services Essentiels pour les Touristes</h1>
-        <p>
-          Trouvez facilement les lieux essentiels pour votre séjour : pharmacies, hôpitaux, pompiers, stations-service et mairie.
-        </p>
-      </header>
+    <div className="about-container">
+      <h1 className="about-title">À propos de notre entreprise</h1>
 
-      {/* Section des services disponibles */}
-      <section className="services">
-        <h2>Nos Services</h2>
-        <div className="service-list">
-          Bonjour Apropos
+      <div className="about-content">
+        <div className="about-image-wrapper">
+          <img
+            src="/Urgencia.jpg"
+            alt="Urgencia"
+            className="about-image"
+          />
+          <h2 className="company-name">Urgencia</h2> {/* Nom de l'entreprise */}
         </div>
-      </section>
 
-      {/* Google Maps - Affichage de la carte
-      <section className="map-section">
-        <h2>Localisation des Services</h2>
-        <GoogleMap />
-      </section> */}
-
-      {/* Pied de page */}
-      <footer className="home-footer">
-        <p>Ouidah Tourisme - Contactez-nous pour plus d’informations !</p>
-      </footer>
+        <div className="about-text">
+          <p>
+            Bienvenue sur notre plateforme ! Nous sommes une entreprise locale basée à Ouidah,
+            engagée à faciliter l'accès à des services essentiels comme la localisation rapide des pharmacies, hopitaux et postes de sapeurs pompiers.
+          </p>
+          <p>
+            L'objectif de ce site est de vous permettre de trouver rapidement une pharmacie, un hopital ou poste de sapeurs pompiers, ouverts.
+            près de chez vous, avec des informations précises, des images, et même l'itinéraire via Google Maps.
+          </p>
+          <p>
+            Grâce à la géolocalisation, notre outil vous connecte automatiquement à la pharmacie la
+            plus proche pour vous faire gagner du temps et garantir votre santé et celle de vos proches.
+          </p>
+        </div>
+      </div>
     </div>
   );
-};
-
-export default About; 
+}

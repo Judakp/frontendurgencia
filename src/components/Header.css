@@ -1,25 +1,85 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background-color: #4c0203; /* Modifie la couleur */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #f16b12;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Logo avec nom d'entreprise */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation principale */
+.navigation {
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Hamburger button (caché par défaut) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------- Responsive Styles -------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
-  
-  .logo img {
-    width: 100px;  
-     height: 100px;
-  } 
-  
+
+  .navigation {
+    width: 100%;
+  }
+
   .navigation ul {
-    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .navigation.open ul {
     display: flex;
-    gap: 20px;
   }
-  
-  .navigation a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+
+  /* Centrer logo + nom sur mobile si souhaité */
+  .logo {
+    margin-bottom: 10px;
   }
-  
+}

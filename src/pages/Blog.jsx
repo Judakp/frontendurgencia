@@ -1,38 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-// import GoogleMap from "../components/GoogleMap"; // Composant pour afficher la carte
+import React, { useState } from "react";
+import BlogList from "../components/BlogList";
 
-const Blog = () => {
+export default function Blog() {
+  const [articles] = useState(() => {
+    const saved = localStorage.getItem("blog_articles");
+    return saved ? JSON.parse(saved) : [];
+  });
+
   return (
-    <div className="home-container">
-      {/* En-tête de la page */}
-      <header className="home-header">
-        <h1>Bienvenue à Ouidah - Services Essentiels pour les Touristes</h1>
-        <p>
-          Trouvez facilement les lieux essentiels pour votre séjour : pharmacies, hôpitaux, pompiers, stations-service et mairie.
-        </p>
-      </header>
-
-      
-      <section className="services">
-    
-        <div className="service-list">
-          Bonjour Blog
-        </div>
-      </section>
-
-      {/* Google Maps - Affichage de la carte
-      <section className="map-section">
-        <h2>Localisation des Services</h2>
-        <GoogleMap />
-      </section> */}
-
-      {/* Pied de page */}
-      <footer className="home-footer">
-        <p>Ouidah Tourisme - Contactez-nous pour plus d’informations !</p>
-      </footer>
+    <div className="blog-page">
+      <h1>Mon Blog</h1>
+      <BlogList articles={articles} />
     </div>
   );
-};
-
-export default Blog; 
+}
