@@ -12,31 +12,35 @@ const Accueil = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
-
+  
+    const formData = new FormData(e.target);
+  
     try {
-      const response = await fetch("https://backend2urgencia-1.onrender.com/api/accueil/contact", {
+      const response = await fetch("https://formspree.io/f/mpwdrkqd", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: formData,
       });
-
+  
       if (response.ok) {
         setIsSubmitted(true);
+        e.target.reset(); // Optionnel : reset du formulaire
       } else {
-        const errorData = await response.json();
-        alert("Erreur : " + errorData.error);
+        const data = await response.json();
+        if (data.errors) {
+          alert("Erreur : " + data.errors.map(err => err.message).join(", "));
+        } else {
+          alert("Une erreur est survenue.");
+        }
       }
     } catch (error) {
       console.error("Erreur lors de l’envoi :", error);
       alert("Erreur réseau ou serveur.");
     }
   };
+  
 
   return (
     <div className="home-container">

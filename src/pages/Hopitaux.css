@@ -1,6 +1,6 @@
 .hospitals-container {
     padding: 40px 20px;
-    background-color: #f7f9fc;
+    background-color: #2596be;
     min-height: 100vh;
   }
   
@@ -25,7 +25,7 @@
   
   .hospital-card {
     width: 250px;
-    background-color: #ffffff;
+    background-color: #f16b12;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

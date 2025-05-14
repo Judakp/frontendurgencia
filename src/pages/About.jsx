@@ -22,7 +22,7 @@ export default function About() {
             engagée à faciliter l'accès à des services essentiels comme la localisation rapide des pharmacies, hopitaux et postes de sapeurs pompiers.
           </p>
           <p>
-            L'objectif de ce site est de vous permettre de trouver rapidement une pharmacie, un hopital ou poste de sapeurs pompiers, ouverts.
+            L'objectif de ce site est de vous permettre de trouver rapidement une pharmacie, un hopital ou un poste de sapeurs pompiers, ouverts.
             près de chez vous, avec des informations précises, des images, et même l'itinéraire via Google Maps.
           </p>
           <p>

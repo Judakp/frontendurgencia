@@ -6,23 +6,25 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
 
-        <p>© 2025 - Site d'information pour les touristes</p>
+        <p>Contact : +2290167337385</p>
+        <p>Email : info@urgencia.com</p>
+        <p>© 2025 - Site d'information sur les services essentiels de la ville de Ouidah</p>
 
         <div className="social-icons">
           <a href="https://www.facebook.com/nom_de_l_entreprise" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/facebook.svg" alt="Facebook" />
+            <img src="/logofacebook.png" alt="Facebook" />
           </a>
           <a href="https://www.linkedin.com/company/nom_de_l_entreprise" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+            <img src="/logolinkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://www.youtube.com/@nom_de_l_entreprise" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/youtube.svg" alt="YouTube" />
+            <img src="/logoyoutube.png" alt="YouTube" />
           </a>
           <a href="https://www.instagram.com/nom_de_l_entreprise" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/instagram.svg" alt="Instagram" />
+            <img src="/instagram.jpeg" alt="Instagram" />
           </a>
           <a href="https://www.threads.net/@nom_de_l_entreprise" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/threads.svg" alt="Threads" />
+            <img src="/thread.png" alt="Threads" />
           </a>
         </div>
         
